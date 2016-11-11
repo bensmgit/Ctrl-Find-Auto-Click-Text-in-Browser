@@ -3,8 +3,6 @@ isfinding = 0
 xp := 0
 yp := 0
 
-Capslock::msgbox yo
-
 #If WinActive("Google Chrome")
 
 ; Chrome highlights matches that are a link in orange, after a user has pressed ctrl+f and typed something.
