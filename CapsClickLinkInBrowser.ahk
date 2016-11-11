@@ -28,7 +28,7 @@ If WinActive("ahk_class IEFrame") or WinActive("ahk_class ApplicationFrameWindow
 {
   Px = 0
   Py = 0
-  PixelSearch, Px, Py, x1, y1, w, h, 0xD77800, 0, Fast
+  PixelSearch, Px, Py, x1, y1, w, h, 0xFF9933, 0, Fast
   If ErrorLevel
   {
     SetCapsLockState, % GetKeyState("Capslock","t") ? "Off" : "On" ; toggle capslock -- by None
@@ -38,7 +38,6 @@ If WinActive("ahk_class IEFrame") or WinActive("ahk_class ApplicationFrameWindow
     Px += 1
     Py += 1
     Click %Px%,%Py%
-    msgbox clickfound
   }
 }
 
