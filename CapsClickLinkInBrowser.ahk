@@ -12,14 +12,18 @@ Px = 0
 Py = 0
 PixelSearch, Px, Py, x1, y1, w, h, 0x3296FF, 0, Fast
 If ErrorLevel
-  Send {Capslock}
+  {
+    Send {Capslock}
+  }
 Else
+  {
   Px += 1
   Py += 1
   Click %Px%,%Py%
+  }
 }
 Else
-  Send {Capslock}
+  SetCapsLockState, % GetKeyState("Capslock","t") ? "Off" : "On" ; toggle capslock -- by None
 Return
-
+ 
 Return
