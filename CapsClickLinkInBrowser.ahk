@@ -6,7 +6,7 @@ WinGetPos, x1, y1, w, h, A
 Send ^f
 Return
 
-Capslock::
+$Capslock::
 IfWinActive, Google Chrome
 {
   Px = 0
